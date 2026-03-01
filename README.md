@@ -197,22 +197,22 @@ This is where the configuration/settings can go ([see below](https://github.com/
 Then in your [keymap.toml](https://yazi-rs.github.io/docs/configuration/keymap) file add:
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "H"
 run = "plugin duckdb -1"
 desc = "Scroll one column to the left"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "L"
 run = "plugin duckdb +1"
 desc = "Scroll one column to the right"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["g", "o"]
 run = "plugin duckdb -open"
 desc = "open with duckdb"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["g", "u"]
 run = "plugin duckdb -ui"
 desc = "open with duckdb ui"
@@ -236,7 +236,7 @@ desc = "open with duckdb ui"
 Use with a larger preview window - add to your `yazi.toml`
 
 ```toml
-[manager]
+[mgr]
 ratio = [1, 2, 5]
 ```
 
